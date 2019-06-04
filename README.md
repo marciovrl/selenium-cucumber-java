@@ -20,7 +20,9 @@ mvn install
 ```
 
 - Rodar testes:
-*! pendente
+```
+mvn clean test
+```
 
 # Utilizando projeto como exemplo.
 - Primeiro clonar projeto:
@@ -34,8 +36,9 @@ mvn install
 ```
 
 - Rodar testes:
-*! pendente
-
+```
+mvn clean -Dtest=CucumberRunner test
+```
 
 # Estrutura do projeto:
 
