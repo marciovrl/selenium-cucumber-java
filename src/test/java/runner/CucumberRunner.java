@@ -14,6 +14,5 @@ public class CucumberRunner {
 
     @BeforeClass
     public static void tearUp() {
-        System.out.println("- init -");
     }
 }
