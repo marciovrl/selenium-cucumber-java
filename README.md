@@ -1,64 +1,51 @@
 # example-selenium-java
 
-Design with simple automated test structure e2e
+Selenium e2e test example in Java.
 
-# Pré-condições:
+# Preconditions:
 
 - Java instalado e configurado;
 - Maven instalado e configurado;
 - Chromedriver instaladoe configurado.
 
-# Começando projeto do zero.
+# Starting project from scratch.
 
-- Criar estrutura do projeto maven:
+- Create maven project structure:
 
 ```
 mvn archetype:generate
 ```
 
-- Procurar dependencias necessaŕios para o seus testes em https://mvnrepository.com/ e inserir no `pom.xml`.
+- Search for required dependencies for your tests at [mvnrepository](https://mvnrepository.com/) and insert them into `pom.xml`.
 
-- Instalar a dependencias:
+- Install dependencies:
 
 ```
 mvn install
 ```
 
-- Rodar testes:
+- Run tests:
 
 ```
 mvn clean test
 ```
 
-# Utilizando projeto como exemplo.
+# Using project as an example.
 
-- Primeiro clonar projeto:
+- First clone project:
 
 ```
 https://github.com/marciovrl/example-selenium-java.git
 ```
 
-- Segundo instalar a dependencias:
+- Second install dependencies:
 
 ```
 mvn install
 ```
 
-- Rodar testes:
+- Run tests:
 
 ```
 mvn clean -Dtest=CucumberRunner test
-```
-
-# Estrutura do projeto:
-
-```
-|
-| - src
-    | - test
-        | - java
-        | - resources
-| - .gitignore
-| - pom.xml
-| - README.md
 ```
