@@ -27,7 +27,7 @@ public class BasePage {
     }
 
     public static void quitBrowser() {
-        driver.close();
+        driver.quit();
     }
 
     protected WebElement waitElement(By locator) {
@@ -89,4 +89,7 @@ public class BasePage {
         this.getElement(locator).sendKeys(Keys.ENTER);
     }
 
+    public static WebDriver getDriver() {
+        return driver;
+    }
 }
