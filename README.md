@@ -4,9 +4,9 @@ Selenium e2e test example in Java.
 
 # Preconditions:
 
-- Java instalado e configurado;
-- Maven instalado e configurado;
-- Chromedriver instaladoe configurado.
+- Java installed and configured;
+- Maven installed and configured;
+- Chromedriver installed and configured.
 
 # Starting project from scratch.
 
