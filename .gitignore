@@ -200,4 +200,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Allure Report
+allure-report/
+
 # End of https://www.gitignore.io/api/java,linux,macos,maven,windows,intellij,visualstudiocode
