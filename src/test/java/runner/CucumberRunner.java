@@ -9,8 +9,9 @@ import cucumber.api.junit.Cucumber;
 import utils.BasePage;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/" }, glue = { "test/steps/definitions" }, tags = {
-        "~@notImplemented" })
+@CucumberOptions(features = { "src/test/resources/" }, plugin = {
+        "io.qameta.allure.cucumberjvm.AllureCucumberJvm" }, glue = {
+                "test/steps/definitions" }, tags = { "~@notImplemented" })
 
 public class CucumberRunner {
 
