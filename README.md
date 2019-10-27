@@ -49,3 +49,9 @@ mvn install
 ```
 mvn clean -Dtest=CucumberRunner test
 ```
+
+- allure serve
+
+```
+allure serve allure-results/
+```
