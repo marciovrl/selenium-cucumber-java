@@ -1,57 +1,20 @@
 # example-selenium-java
 
-Selenium e2e test example in Java.
+Functional test example of web application in Java with Selenium and Cucumber
 
-# Preconditions:
+# Prerequisites
 
 - Java installed and configured;
 - Maven installed and configured;
-- Chromedriver installed and configured.
-
-# Starting project from scratch.
-
-- Create maven project structure:
-
-```
-mvn archetype:generate
-```
-
-- Search for required dependencies for your tests at [mvnrepository](https://mvnrepository.com/) and insert them into `pom.xml`.
-
-- Install dependencies:
-
-```
-mvn install
-```
-
-- Run tests:
-
-```
-mvn clean test
-```
-
-# Using project as an example.
-
-- First clone project:
+- Browsers driver installed and configured.
+- Clone repository:
 
 ```
 https://github.com/marciovrl/example-selenium-java.git
 ```
 
-- Second install dependencies:
+# Run
 
-```
-mvn install
-```
+### `make help`
 
-- Run tests:
-
-```
-mvn clean -Dtest=CucumberRunner test
-```
-
-- allure serve
-
-```
-allure serve allure-results/
-```
+Displays all options for the project's make commands.
