@@ -35,4 +35,15 @@ public class SearchItem {
         String result = pageSearchresult.getTextLabelSearchResult();
         assertTrue(result.contains("golf"));
     }
+
+    @When("^filter by state of \"([^\"]*)\"$")
+    public void filterByStateOf(String state) throws Throwable {
+        pageSearchresult.setFilter(state);
+    }
+
+    @Then("^I view items according to my filtered search$")
+    public void iViewItemsAccordingToMyFilteredSearch() throws Throwable {
+        String result = pageSearchresult.getTextLabelSearchResult();
+        assertTrue(result.contains("Volkswagen Golf em São Paulo"));
+    }
 }
