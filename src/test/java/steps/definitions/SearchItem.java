@@ -2,7 +2,6 @@ package steps.definitions;
 
 import static org.junit.Assert.assertTrue;
 
-import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 import pages.Home;
@@ -19,11 +18,6 @@ public class SearchItem {
         DriverFactory.getDriver();
         pageHome = new Home();
         pageSearchresult = new SearchResult();
-    }
-
-    @After
-    public static void tearDown() {
-        DriverFactory.closeDriver();
     }
 
     @Given("^that it is on the homepage of Mercado Livre$")
