@@ -39,6 +39,16 @@ public class BasePage {
         return this.waitElements(locator);
     }
 
+    protected void clickElementListByText(By locator, String textElement) {
+        List<WebElement> elements = getElements(locator);
+        for (WebElement element : elements) {
+            if (element.getText().contains(textElement)) {
+                element.click();
+                break;
+            }
+        }
+    }
+
     protected void click(By locator) {
         this.waitElement(locator);
         this.getElement(locator).click();
@@ -59,5 +69,14 @@ public class BasePage {
 
     protected void pressEnter(By locator) {
         this.getElement(locator).sendKeys(Keys.ENTER);
+    }
+
+    protected void sleep(long time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
