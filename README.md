@@ -1,19 +1,24 @@
-# example-selenium-java
+# selenium-java-example
 
-Functional test example of web application in Java with Selenium and Cucumber
+Functional test example of web application in Java with Selenium and Cucumber.
 
-# Prerequisites
+## Getting started
 
-- Java installed and configured;
-- Maven installed and configured;
-- Browsers driver installed and configured.
-- Clone repository:
+- [Java](https://www.java.com/en/)<br>
+- [Maven](https://maven.apache.org/)<br>
+- Browser and driver<br>
 
-```
-https://github.com/marciovrl/example-selenium-java.git
-```
+## Configuration
 
-# Run
+### `git clone https://github.com/marciovrl/selenium-java.git`
+
+Clone the project
+
+### `mvn install`
+
+Install the dependencies
+
+## Commands
 
 ### `make help`
 
